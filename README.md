@@ -19,37 +19,6 @@ Lalu ketik command dibawah ini
 - php artisan migrate (migrasi database)
 - php artisan db:seed --class=UserSeeder (mengisi data table users)
 
-Lalu cari file helpers.php (vendor\laravel\framework\src\Illuminate\Foundation\helpers.php)
-- cari syntac:
-if (! function_exists('asset')) {
-    /**
-     * Generate an asset path for the application.
-     *
-     * @param  string  $path
-     * @param  bool|null  $secure
-     * @return string
-     */
-    function asset($path, $secure = null)
-    {
-        return app('url')->asset($path, $secure);
-    }
-}
-
-- Rubah menjadi
-if (! function_exists('asset')) {
-    /**
-     * Generate an asset path for the application.
-     *
-     * @param  string  $path
-     * @param  bool|null  $secure
-     * @return string
-     */
-    function asset($path, $secure = null)
-    {
-        return app('url')->asset("public/".$path, $secure);
-    }
-}
-
 Kemudia run localhost/namefolder
 
 
