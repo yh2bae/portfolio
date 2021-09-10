@@ -20,7 +20,7 @@ Lalu ketik command dibawah ini
 - php artisan db:seed --class=UserSeeder (mengisi data table users)
 
 Lalu cari file helpers.php di vendor\laravel\framework\src\Illuminate\Foundation\
-<img src="https://github.com/yh2bae/readme-images/blob/master/portfolio/setting-asset.png?raw=true">
+<img src="https://github.com/yh2bae/readme-image/blob/master/portfolio/setting-asset.png?raw=true">
 
 Kemudia run localhost/namefolder
 
